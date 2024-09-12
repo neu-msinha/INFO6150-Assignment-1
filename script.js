@@ -49,3 +49,12 @@ volumeControl.addEventListener('input', () => {
 
 // Initialize volume
 volumeControl.value = backgroundAudio.volume;
+
+// Handle clicks on dropdown items
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+    item.addEventListener('click', () => {
+        const toggle = document.getElementById('dropdown-toggle');
+        toggle.checked = false; // Close the dropdown when a place is selected
+    });
+});
+
