@@ -17,6 +17,7 @@ summary {
     cursor: pointer;
 }
 
+/* Basic styles for the nav */
 nav {
     text-align: center;
 }
@@ -43,28 +44,58 @@ nav menu li a:hover {
     background-color: #555;
 }
 
-nav menu li .dropdown-content {
+/* Hide the checkbox */
+.dropdown-toggle {
+    display: none;
+}
+
+/* Dropdown button styles */
+.dropdown-button {
+    cursor: pointer;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     z-index: 1;
+    left: 0;
+    top: 100%;
 }
 
-nav menu li:hover .dropdown-content {
+/* Show dropdown when checkbox is checked */
+.dropdown-toggle:checked + .dropdown-button + .dropdown-content {
     display: block;
 }
 
-nav menu li .dropdown-content a {
+/* Dropdown links */
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
     display: block;
     color: white;
     padding: 10px 15px;
     text-align: left;
+    text-decoration: none;
 }
 
-nav menu li .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #555;
 }
+
+/* Hide dropdown when clicking outside */
+body {
+    position: relative;
+}
+
+body:focus-within .dropdown-content {
+    display: none;
+}
+
 
 /* Welcome Section */
 #welcome {
