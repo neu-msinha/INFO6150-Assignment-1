@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northeastern Student Utilities Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="Resources/favicon.png">
+</head>
+
+<header>
+    <p>Assignment 1 - Mayukh Sinha</p>
+  </header>
+
+<body>
+
+    <audio id="background-audio" src="resources/BackgroundMusic.mp3" autoplay loop></audio>
+
+<!-- Navbar -->
+<nav>
+    <menu>
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="#">Places</a>
+            <menu class="dropdown-content">
+                <li><a href="#target">Target</a></li>
+                <li><a href="#bestbuy">Best Buy</a></li>
+                <li><a href="#tjmax">TJ Max</a></li>
+                <li><a href="#stopandshop">Stop And Shop</a></li>
+                <li><a href="#walmart">Walmart</a></li>
+                <li><a href="#wholefoods">Whole Foods</a></li>
+                <li><a href="#costco">Costco</a></li>
+            </menu>
+        </li>
+        <li>
+            <button id="audio-control-button">Audio Control</button>
+        </li>
+    </menu>
+</nav>
+
+<!-- Audio Control Popup -->
+<div id="audio-popup" class="audio-popup">
+    <button id="close-popup" class="close-button">X</button>
+    <audio id="background-audio" autoplay loop>
+        <source src="Resources/BackgroundMusic.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="audio-controls">
+        <button id="mute-unmute">Mute</button>
+        <button id="play-pause">Play/Pause</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+    </div>
+</div>
+
+
+<!-- Welcome Section -->
+<section id= "welcome" class="static-heading scroll-visible">
+    <h1>Welcome to Boston</h1>
+    <h2>Your Guide for All Utilities Around Northeastern University</h2>
+</section>
+
+<section id="welcome">
+    <div>
+        <video autoplay muted loop>
+            <source src="resources/NortheasternDroneShot.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- Places Table -->
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Place</th>
+                <th>Category</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><a href="#target">Target</a></td><td>Grocery, Electronics</td><td>1341 Boylston St</td></tr>
+            <tr><td><a href="#bestbuy">Best Buy</a></td><td>Electronics</td><td>401 Park Dr</td></tr>
+            <tr><td><a href="#tjmax">TJ Max</a></td><td>Clothing, Home Goods</td><td>350 Washington St</td></tr>
+            <tr><td><a href="#stopandshop">Stop And Shop</a></td><td>Grocery</td><td>1620 Tremont St</td></tr>
+            <tr><td><a href="#walmart">Walmart</a></td><td>Grocery, Electronics</td><td>700 Pleasant St</td></tr>
+            <tr><td><a href="#wholefoods">Whole Foods</a></td><td>Organic Grocery</td><td>181 Cambridge St</td></tr>
+            <tr><td><a href="#costco">Costco</a></td><td>Wholesale</td><td>2 Mystic View Rd</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Individual Place Sections -->
+
+
+<section id="target" class="place">
+    <img src="resources/target.jpg" alt="Target Store">
+    <p>Target is a convenient, all-in-one store for groceries, household essentials, electronics, and even clothing. It’s a great spot to get everything you need for your dorm or apartment. With competitive pricing, Target is a favorite for students. It’s located at <strong>1341 Boylston St</strong>, just a short walk or a quick bus ride from Northeastern University.
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       
+    </p>
+</section>
+
+<section id="bestbuy" class="place">
+    <img src="resources/Bestbuy.jpeg" alt="Best Buy Store">
+    <p>Best Buy is the go-to spot for all your electronics needs. From laptops and phones to home appliances and tech gadgets, they have it all. Whether you're setting up a home office or just need the latest tech, Best Buy at <strong>401 Park Dr</strong> offers excellent deals for students, plus in-store tech support and repairs if you run into issues.
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       
+    </p>
+</section>
+
+<section id="tjmax" class="place">
+    <img src="resources/tjmax.png" alt="TJ Max Store">
+    <p>TJ Max offers fashionable clothing, shoes, accessories, and home goods at discounted prices. Whether you're looking for a wardrobe update or need decor to personalize your space, TJ Max is a budget-friendly choice. It’s conveniently located at <strong>350 Washington St</strong>, perfect for students who want style on a budget.
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       
+    </p>
+</section>
+
+<section id="stopandshop" class="place">
+    <img src="resources/stopandshop.jpg" alt="Stop and Shop Store">
+    <p>Stop And Shop is a popular grocery store chain offering a wide selection of fresh produce, meats, dairy, and household essentials. Whether you’re meal-prepping or just grabbing snacks, Stop And Shop has what you need at affordable prices. Find this store at <strong>1620 Tremont St</strong>, easily accessible from Northeastern's campus.
+    
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       </p>
+</section>
+
+<section id="walmart" class="place">
+    <img src="resources/walmart.jpg" alt="Walmart Store">
+    <p>Walmart is a one-stop shop offering everything from groceries and electronics to furniture and cleaning supplies. Known for its unbeatable prices, Walmart is perfect for students who need to stock up on everyday essentials without breaking the bank. The store is located at <strong>700 Pleasant St</strong>, and is well worth the trip for bulk purchases.
+    
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       </p>
+</section>
+
+<section id="wholefoods" class="place">
+    <img src="resources/wholefood.jpg" alt="Whole Foods Store">
+    <p>If you prefer organic and health-conscious grocery options, Whole Foods is the place for you. With a selection of organic produce, ethically sourced meat, and unique health products, Whole Foods caters to those with a focus on sustainable and wholesome living. It’s located at <strong>181 Cambridge St</strong>, a convenient location for grabbing premium groceries close to campus.
+    
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       </p>
+</section>
+
+<section id="costco" class="place">
+    <img src="resources/costo.png" alt="Costco Store">
+    <p>Costco is ideal for bulk purchases, offering everything from groceries to home essentials at discounted prices. It's perfect for students looking to stock up on items for the long haul. The membership-based store is located at <strong>2 Mystic View Rd</strong>, and while it’s a bit of a drive, the savings you’ll get on bulk items are worth it.
+    
+        <br>
+        <a href="https://goo.gl/maps/nWd6mrToaXt" target="_blank">View on Google Maps</a>
+       </p>
+</section>
+
+<!-- About Me Section -->
+<section id="about-me">
+    <h2>About Me</h2>
+    <img src="resources/MyPhoto.png" alt="My Photo">
+    <details>
+        <summary>Click to know More</summary>
+        <p>I am a software developer with expertise in Web API design and development, enterprise testing frameworks, and mentoring junior developers. During my time at SOTI, I contributed to API optimization, significantly reducing response times. I also developed an end-to-end testing framework, supporting multiple platforms. My work earned me recognition, including an MVP award for saving over $150k by developing an in-house device farm. I’m passionate about technology and helping others grow in the field.</p>
+       </details>
+    </section>
+
+<!-- Contact Form Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Copyright © 2024 Northeastern Student Utilities Guide</p>
+    <p><a href="tel:+917838284473">Call Us</a> | <a href="mailto:mayukhsinha11699@gmail.com">Email Us</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
